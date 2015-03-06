@@ -4,6 +4,8 @@
 
 *{
     font-family: 'Vollkorn', serif;
+    margin: 0;
+    border: 0;
 }
 
 h4{
@@ -67,3 +69,10 @@ li{
     clear: both;
 
 }
+
+#nav{
+
+    padding: 0px;
+    margin: 0px;
+}
+
