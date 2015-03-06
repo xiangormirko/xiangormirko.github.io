@@ -8,6 +8,8 @@
 
 h4{
     font-family: 'Oswald', sans-serif;
+    color:#EF913E;
+    padding-top: 20px;
 
 }
 
@@ -29,12 +31,7 @@ body{
 
 .button{
     background-color: #EF913E;
-    border: 3px solid white;
-    margin: 2px;
-    width: 150px;
-    height: 50px;
     font-family: 'Oswald', sans-serif;
-    text-align: center;
 }
 
 p{
@@ -48,28 +45,25 @@ li{
 }
 
 #headshot{
-    height: 400px;
-    width: auto;
+    
     border: 10px solid white;
 
 }
 
 #blurb{
     display: inline-block;
-    margin-left: 5%;
-    height: 40%;
-    width: 30%;
     text-align: center;
     font-family: 'Abril Fatface', cursive;
 }
 
 #blurb p{
-    font-size:30px ;
-    margin-top: 30%;
+    font-size:200%;
+    margin-top: 10%;
     float: left;
 }
 
-#clear{
+.clear{
     height: 0px;
+    clear: both;
 
 }
