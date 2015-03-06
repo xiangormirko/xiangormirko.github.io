@@ -1,0 +1,22 @@
+.sectionImage{
+    height: 200px;
+    border: 10px solid white;
+    
+
+}
+
+body{
+    background-color:#188FA7 ;
+
+}
+
+.button{
+    background-color: #EF913E;
+    border: 3px solid white;
+    margin: 2px;
+}
+
+p{
+    color: white;
+}
+
