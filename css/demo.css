@@ -119,5 +119,6 @@ a:focus {
 #firstimg{
     height: 900px;
     width: auto;
+    opacity: 0.5;
 }
 
