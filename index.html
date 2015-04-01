@@ -10,8 +10,9 @@
 		<meta name="author" content="Codrops" />
 		<link rel="shortcut icon" href="../favicon.ico">
 		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
-		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		
 		<link rel="stylesheet" type="text/css" href="css/layout-simple.css" />
+        <link rel="stylesheet" type="text/css" href="css/demo.css" />
 		<!--[if IE]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
@@ -51,20 +52,20 @@
 			<section class="items-wrap">
 				<a href="#" class="item">
 					<img class="item__image" src="img/snapshot.jpeg" alt="item01"/>
-                    <span class="hidden"><p>After one year in a large company as a Agile Project Manager, I am ready to devour more knowledge and hone my skills. I want to assimilate as much as possible from my Startup Institute experience and position myself to solve problems and needs, with customer and data driven solutions.I lived extensively in 3 continents, I am excited to see where my next chapter will bring me. I want to join or create something meaningful that will work better than coffee to get me awake in the morning. 
+                    <span class="hidden"><p class="blurb">After one year in a large company as a Agile Project Manager, I am ready to devour more knowledge and hone my skills. I want to assimilate as much as possible from my Startup Institute experience and position myself to solve problems and needs, with customer and data driven solutions.I lived extensively in 3 continents, I am excited to see where my next chapter will bring me. I want to join or create something meaningful that will work better than coffee to get me awake in the morning. 
 </p></span>
 					<h2 class="item__title">Snapshot of me</h2>
 				</a>
 				<a href="#" class="item">
 					<img class="item__image" src="img/asset.jpeg" alt="item02"/>
-                    <span class="hidden"><p>Something that I found always useful is my cheerfulness. People describe me as someone with a tremendous attitude to learn, share, and do.I always believe that is up to me if I want to tackle the day ahead of me with a big smile            or being all gloomy. Of course I choose the first option.So to any team that I will join, you have my utmost commitment to do my best and bring my boundless enthusiasm!</p></span>
+                    <span class="hidden"><p class="blurb">Something that I found always useful is my cheerfulness. People describe me as someone with a tremendous attitude to learn, share, and do.I always believe that is up to me if I want to tackle the day ahead of me with a big smile or being all gloomy. Of course I choose the first option.So to any team that I will join, you have my utmost commitment to do my best and bring my boundless enthusiasm!</p></span>
 					<h2 class="item__title">Asset</h2>
 				</a>
 				<a href="#" class="item">
 					<img class="item__image" src="img/coffee.jpeg" alt="item03"/>
 					<h2 class="item__title">Can't live without</h2>
                     <span class="hidden">            
-                        <p>                
+                        <p class="blurb">                
                         <ul>
                 <li>Coffee, second coffee, after lunch coffee, and apres-dinner digestive coffee. </li>
                 <li>Fresh air, I need a good dose of fresh air a few times a day to feel more alive. </li>
@@ -86,7 +87,6 @@
 			(function() {
 				var container = document.getElementById( 'container' ),
 					trigger = container.querySelector( 'button.trigger' );
-
 				function toggleContent() {
 					if( classie.has( container, 'container--open' ) ) {
 						classie.remove( container, 'container--open' );
@@ -99,19 +99,14 @@
 						window.removeEventListener( 'scroll', noscroll );
 					}
 				}
-
 				function noscroll() {
 					window.scrollTo( 0, 0 );
 				}
-
 				// reset scrolling position
 				document.body.scrollTop = document.documentElement.scrollTop = 0;
-
 				// disable scrolling
 				window.addEventListener( 'scroll', noscroll );
-
 				trigger.addEventListener( 'click', toggleContent );
-
 				// For Demo purposes only (prevent jump on click)
 				[].slice.call( document.querySelectorAll('.items-wrap a') ).forEach( function(el) { el.onclick = function() { return false; } } );
 			})();
